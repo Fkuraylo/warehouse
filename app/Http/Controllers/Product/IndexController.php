@@ -13,7 +13,8 @@ class IndexController extends Controller
     public function __invoke()
     {
         $products = Product::all();
-        
+        dd($products);
+
         return view('product.index', compact('products'));
     }
 }
