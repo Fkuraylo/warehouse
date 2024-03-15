@@ -23,7 +23,8 @@
         </div>
         <div class="form-group mt-3">
             <label for="product_description">Описание</label>
-            <textarea class="form-control" id="product_description" name="description">{{ $product->description }}</textarea>
+            <textarea class="form-control" id="product_description"
+                      name="description">{{ $product->description }}</textarea>
             @error('description')
             <p class="text-danger">{{ $message }}</p>
             @enderror

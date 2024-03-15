@@ -7,21 +7,24 @@
         @csrf
         <div class="form-group mt-3">
             <label for="exampleInputEmail1">Название</label>
-            <input type="text" class="form-control" id="product_name" name="name" placeholder="Название товара" value="{{ @old('name') }}">
+            <input type="text" class="form-control" id="product_name" name="name" placeholder="Название товара"
+                   value="{{ @old('name') }}">
             @error('name')
             <p class="text-danger">{{ $message }}</p>
             @enderror
         </div>
         <div class="form-group mt-3">
             <label for="exampleInputEmail1">Цена</label>
-            <input type="text" class="form-control" id="product_price" name="price" placeholder="В рублях" value="{{ @old('price') }}">
+            <input type="text" class="form-control" id="product_price" name="price" placeholder="В рублях"
+                   value="{{ @old('price') }}">
             @error('price')
             <p class="text-danger">{{ $message }}</p>
             @enderror
         </div>
         <div class="form-group mt-3">
             <label for="exampleInputEmail1">Описание</label>
-            <textarea class="form-control" id="product_description" name="description" placeholder="Описание товара">{{ @old('description') }}</textarea>
+            <textarea class="form-control" id="product_description" name="description"
+                      placeholder="Описание товара">{{ @old('description') }}</textarea>
             @error('description')
             <p class="text-danger">{{ $message }}</p>
             @enderror
