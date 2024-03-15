@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//master branch
+
 Route::group(['namespace' => 'App\HTTP\Controllers\Product'], function () {
     Route::get('/products', 'IndexController')->name('product.index');
     Route::get('/products/create', 'CreateController')->name('product.create');
